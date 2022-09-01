@@ -60,7 +60,7 @@ header > p {
 }
 
 .logo {
-
+    width: 80px;
 }
 nav{
     background-color: var(--cor5);
