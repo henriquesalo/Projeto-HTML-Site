@@ -27,43 +27,50 @@ http-equiv="content-type">
     </header>
 
     <main class="text">
-                <h4>Junte-se a Nos</h4>
+        <section class="home">
+            <div class="home-text"></div>
+                
                 <form action="envio-dados.php" method="post">
-                    <div class="col-4">
-                        <label for="nome">Nome Completo</label>
-                        <input type="text" name="nome" id="nome" class="inputtext _58mg _5dba _2ph-">
+                    <h1 id="titulo">Junte-se a Nos</h1><br>
+
+                    <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome Completo:</strong></label>
+                        <input type="text" name="nome" id="nome" class="inputtext _58mg _5dba _2ph-" required>
                     </div>
 
-                    <div class="col-4">
-                        <label for="email">E-mail</label>
-                        <input type="text" name="email" id="email" class="inputtext _58mg _5dba _2ph-">
+                    <div class="campo">
+                        <label for="email"><strong>E-mail:</strong></label>
+                        <input type="email" name="email" id="email" class="inputtext _58mg _5dba _2ph-" required>
                     </div>
 
-                    <div class="col-4">
-                        <label for="tel">Telefone Para Contato</label>
-                        <input type="tel" name="telefone" id="telefone" class="inputtext _58mg _5dba _2ph-">
+                    <div class="campo">
+                        <label for="tel"><strong>Telefone:</strong></label>
+                        <input type="tel" name="telefone" id="telefone" class="inputtext _58mg _5dba _2ph-" required>
                     </div>
 
-                    <div class="col-4">
-                        <label for="sex">Sexo</label>
-                        <input type="text" name="sex" id="sex" class="inputtext _58mg _5dba _2ph-">
+                    <div class="campo">
+                        <label for="sex"><strong>Sexo:</strong></label>
+                        <input type="text" name="sex" id="sex" class="inputtext _58mg _5dba _2ph-" required>
                     </div>
 
-                    <div class="col-4">
-                        <label for="dataNascimento">Data de Nascimento</label>
-                        <input type="text" name="aniversario" id="aniversario" class="inputtext _58mg _5dba _2ph-">
+                    <div class="campo">
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="text" name="aniversario" id="aniversario" class="inputtext _58mg _5dba _2ph-" required>
                     </div>
             </div><br>
 
-                    <button type="submit" name="submit"><a href="index.html" onclick="cadastro()" value="Exibir Alert">Finalizar Cadastro</a></button>
-
+                    <button type="submit" class="home-btn" name="submit"><a href="index.html" onclick="cadastro()" value="Exibir Alert">Finalizar Cadastro</a></button>
+                </fieldset>
                 </form>
             </div>
+            </div>
+        </section>
     </main>
 
         <script>
             function cadastro(){
-                alert("Seus Cadastro foi Efetuado com Sucesso!!");
+                alert("Seus cadastro foi efetuado com sucesso !");
             }
         </script>
 
