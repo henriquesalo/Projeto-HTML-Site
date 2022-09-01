@@ -10,7 +10,7 @@
 }
 
 :root{
-    --red:#0f2edb;
+    --azul:#0f2edb;
     --white:#fff;
     --dark:#1e1c2a;
 }
@@ -30,7 +30,7 @@ body{
     position: fixed;
 }
 .navigation .logo{
-    color: var(--red);
+    color: var(--azul);
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -52,7 +52,7 @@ body{
     transition: all 0.5s;
 }
 .navigation ul li a:hover{
-    color: var(--red);
+    color: var(--azul);
 }
 .navigation i{
     cursor: pointer;
@@ -73,7 +73,7 @@ body{
 }
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3){
-    background: var(--red);
+    background: var(--azul);
 }
 .home{
     width: 100%;
@@ -88,7 +88,7 @@ body{
 }
 .home-text .text-h4{
     font-size: 1.5rem;
-    color: var(--red);
+    color: var(--azul);
     margin-bottom: 1rem;
 }
 .home-text .text-h1{
@@ -101,7 +101,7 @@ body{
 }
 .home-btn{
     padding: 15px 45px;
-    background: var(--red);
+    background: var(--azul);
     color: var(--white);
     border-radius: 10px;
     font-weight: 700;
@@ -113,6 +113,8 @@ body{
 .home-img img{
     width: 100%;
 }
+
+
 @media (max-width:785px) {
     .navigation{
         padding: 18px 20px;

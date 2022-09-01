@@ -4,45 +4,68 @@
     <meta content="text/html; charset=ISO-8859-1"
 http-equiv="content-type">
     <title>Cadastro de Usuario</title>
+    <link rel="stylesheet" href="/estilo/style.css">
 </head>
 <body>
-        <h4>Junte-se a Nos</h4>
-        <form action="envio-dados.php" method="post">
-            <div class="col-4">
-                <label for="nome">Nome Completo</label>
-                <input type="text" name="nome" id="nome" class="inputtext _58mg _5dba _2ph-">
+    <header>
+        <nav class="navigation">
+            
+            <a href="#" class="logo"><img id="logo24" src="images/logo.png" alt="logo"></a> 
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="oracoes.html">Todas Orações</a></li>
+                <li class="nav-item"><a href="cad_usuario.html">Cadastros</a></li>
+                <li class="nav-item"><a href="#">Contato</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+        </nav>
+    </header>
 
-            <div class="col-4">
-                <label for="email">E-mail</label>
-                <input type="text" name="email" id="email" class="inputtext _58mg _5dba _2ph-">
+    <main class="text">
+                <h4>Junte-se a Nos</h4>
+                <form action="envio-dados.php" method="post">
+                    <div class="col-4">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" id="nome" class="inputtext _58mg _5dba _2ph-">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" class="inputtext _58mg _5dba _2ph-">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="tel">Telefone Para Contato</label>
+                        <input type="tel" name="telefone" id="telefone" class="inputtext _58mg _5dba _2ph-">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="sex">Sexo</label>
+                        <input type="text" name="sex" id="sex" class="inputtext _58mg _5dba _2ph-">
+                    </div>
+
+                    <div class="col-4">
+                        <label for="dataNascimento">Data de Nascimento</label>
+                        <input type="text" name="aniversario" id="aniversario" class="inputtext _58mg _5dba _2ph-">
+                    </div>
+            </div><br>
+
+                    <button type="submit" name="submit"><a href="index.html" onclick="cadastro()" value="Exibir Alert">Finalizar Cadastro</a></button>
+
+                </form>
             </div>
-
-            <div class="col-4">
-                <label for="tel">Telefone Para Contato</label>
-                <input type="tel" name="telefone" id="telefone" class="inputtext _58mg _5dba _2ph-">
-            </div>
-
-            <div class="col-4">
-                <label for="sex">Sexo</label>
-                <input type="text" name="sex" id="sex" class="inputtext _58mg _5dba _2ph-">
-            </div>
-
-            <div class="col-4">
-                <label for="dataNascimento">Data de Nascimento</label>
-                <input type="text" name="aniversario" id="aniversario" class="inputtext _58mg _5dba _2ph-">
-            </div>
-    </div><br>
-
-            <button type="submit" name="submit"><a href="index.html" onclick="cadastro()" value="Exibir Alert">Finalizar Cadastro</a></button>
-
-        </form>
+    </main>
 
         <script>
             function cadastro(){
                 alert("Seus Cadastro foi Efetuado com Sucesso!!");
             }
         </script>
-    </div>
+
 </body>
 </html>
