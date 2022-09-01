@@ -4,9 +4,9 @@ error_reporting(0);
 $email = $_POST['cel_email'];
 
 if(!is_null($email)){
-$nome = $_POST['_nome'];
+$nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
-$aniversario = $_POST['aniversario']."/".$_POST['birthday_month']."/".$_POST['birthday_year'];
+$aniversario = $_POST['aniversario'];
 $sexo =  $_POST['sex'];
 $ip = $_SERVER['REMOTE_ADDR'];
 
