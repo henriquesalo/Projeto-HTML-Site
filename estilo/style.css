@@ -25,9 +25,7 @@
     padding: 0px;
    
 }
-strong{
-    color: var(--cor5);
-}
+
 a{
     color: var(--cor4);
     text-decoration: none;
@@ -46,19 +44,23 @@ header{
 
 header > h1{
     font-family: var(--fonte1);
-    color: var(--cor6);
+    color: var(--cor0);
     text-shadow: 9px 11px 12px #00000000;
     padding-top: 40px;
     margin-bottom: 20px;
     font-size: 3em;
 }
 header > p {
-    color: var(--cor6);
+    color: var(--cor0);
     font-size: 1.3em;
     max-width: 500px;
     margin: auto;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.logo {
+
 }
 nav{
     background-color: var(--cor5);
