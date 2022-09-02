@@ -13,3 +13,16 @@ form.addEventListener('submit', (event))=> {
     }
     console.log(novoCadastro)
 }
+
+form.addEventListener('submit', (event)=> {
+
+   event.preventDefault();
+
+   let novoCadastro = {
+      nome : form.nome.value,
+      email : form.email.value,
+      tel : form.tel.value,
+      aniversario : form.aniversario.value
+    }
+    console.log(novoCadastro)
+})
