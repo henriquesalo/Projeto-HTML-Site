@@ -1,4 +1,6 @@
-const form = document.querySelector("#aform_cadastro");
+import {nome} from './y/services.js'
+
+const form = document.querySelector("#form_cadastro");
 
 form.addEventListener('submit', (event)=> {
 
