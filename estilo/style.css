@@ -120,10 +120,12 @@ body{
     margin-left: 7%;
 } 
 
-fieldset{
-    display: inline;
+fieldset {
+    display: inline-block;
+    margin: auto;
     justify-content: center;
-    text-align:center
+    text-align:center;
+    vertical-align:middle;
 }
 
 @media (max-width:785px) {
