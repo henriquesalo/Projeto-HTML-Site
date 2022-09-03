@@ -16,7 +16,7 @@ http-equiv="content-type">
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="oracoes.html">Todas Orações</a></li>
-                <li class="nav-item"><a href="#">Calendário</a></li>
+                <li class="nav-item"><a href="calendario.html">Calendário</a></li>
                 <li class="nav-item"><a href="contato.html">Contato</a></li>
                 <i class='bx bx-search'></i>
             </ul>
@@ -27,45 +27,51 @@ http-equiv="content-type">
             </div>
         </nav>
     </header>
-
-    <main class="text">
-        <section class="home">
-            <div class="home-text"></div>
-            <picture>
-                <source media="(max-width: 670px)" srcset="images/orando.png" type="image/png">
-                <img src="images/orando.png" alt="Imagem flexível">
-             </picture> 
-                <form id="form_cadastro">
-                    <h1 id="titulo">Junte-se a Nos</h1><br>
-
-                    <fieldset class="grupo">
-                    <div class="campo">
-                        <label for="nome"><strong>Nome Completo:</strong></label>
-                        <input type="text" name="nome" id="nome" class="inputtext _58mg _5dba _2ph-" required>
-                    </div>
-
-                    <div class="campo">
-                        <label for="email"><strong>E-mail:</strong></label>
-                        <input type="email" name="email" id="email" class="inputtext _58mg _5dba _2ph-" required>
-                    </div>
-
-                    <div class="campo">
-                        <label for="tel"><strong>Telefone:</strong></label>
-                        <input type="tel" name="telefone" id="telefone" class="inputtext _58mg _5dba _2ph-" required>
-                    </div>
-                    
-                    <div class="campo">
-                        <label for="aniversario"><strong>Data de Nascimento</strong></label>
-                        <input type="text" name="aniversario" id="aniversario" class="inputtext _58mg _5dba _2ph-">
-                    </div>    
-            </div><br>
-
-                    <button type="submit" class="home-btn" name="submit"><a href="index.html" onclick="cadastro()" value="Exibir Alert">Finalizar Cadastro</a></button>
-                </fieldset>
-                </form>
+    <br><br><br><br><br><br>
+    <main class="container">
+        <h2>Cadastre-se</h2>
+        <form action="">
+            <div class="input-field">
+                <input type="text" name="username" id="username"
+                    placeholder="Nome Completo">
+                <div class="underline"></div>
             </div>
+            <div class="input-field">
+                <input type="email" name="email" id="email"
+                    placeholder="Email">
+                <div class="underline"></div>
             </div>
-        </section>
+            <div class="input-field">
+                <input type="number" name="telefone" id="telefone"
+                    placeholder="Seu Numero de Telefone">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="date" name="aniversario" id="aniversario"
+                    placeholder="Data de Aniversario">
+                <div class="underline"></div>
+            </div>
+
+            <input type="submit" value="Continue">
+        </form>
+
+        <div class="footer">
+            <span>Or Connect With Social Media</span>
+            <div class="social-fields">
+                <div class="social-field twitter">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        Sign in with Twitter
+                    </a>
+                </div>
+                <div class="social-field facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        Sign in with Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
         <script>
