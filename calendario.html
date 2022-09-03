@@ -32,19 +32,52 @@
             <br><br><br><br><br><br><br>
             <h1>Agende Sua Oração !!</h1>
             <br><br><br>
-            <table border="0" bgcolor="#FFFFFF">
-                <tr bgcolor="#FFFFFF"><th colspan="4">SETEMBRO</th><th colspan="3">2022</th></tr>
-                <tr bgcolor="#FFFFCC"><th>DOM</th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th><th>SAB</th></tr>
-                <tr bgcolor="#FFCCFF"><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td> 1</td></tr>
-                <tr bgcolor="#CCFFFF"><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td></tr>
-                <tr bgcolor="#FFCCFF"><td> 9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
-                <tr bgcolor="#CCFFFF"><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr>
-                <tr bgcolor="#FFCCFF"><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr>
-                <tr bgcolor="#CCFFFF"><td>30</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td></tr>
-                </table>
+            <form>
+                <div class="field small">
+                  <label>Data proposta *</label>
+                  <input type="date" name="data" id="dtAgenda" min="2017-04-01" required />
+                  <p><span style="color:#ff0000;"><small>Aten&ccedil;&atilde;o, Agendar para a partir de:</small></span></p><div id="divDtFutura"></div>
+                </div>
+              </form><br>
+              <button><a href="oracoes.html" onclick="agenda()" value="Exibir Alert">AGENDAR</a></button>
+              <script>
+                function agenda(){
+                    alert("Seu Agendamento Foi Efetuado Com Sucesso !!");
+                }
+            </script>
+            <script>
+                var today = new Date();
+                var dd = today.getDate();
+                var mm = today.getMonth() + 1; //Janeiro é 0, então somamos + 1 para trabalhar com calendário conhecido
+                var yyyy = today.getFullYear();
+                // Data de hoje mais 1 dias
+                dd = dd + 1;
+                //se for maior que dia 30 vai para o proximo mês
+                if(dd > 30){
+                  dd = dd - 30;
+                  mm = mm+1;
+                }
+                //se for maior que 12 vai para o proximo ano
+                if(mm > 12){
+                  mm = 1;
+                  yyyy = yyyy + 1;
+                }
+                // Se for menor que 10 formatamos com um zero na frente Ex: de 9 para 09
+                if(dd < 10){
+                  dd = '0' + dd;
+                }
+                // Se for menor que 10 formatamos com um zero na frente Ex: de 9 para 09
+                if(mm < 10){
+                  mm = '0' + mm;
+                }
+                today = yyyy + '-' + mm + '-' + dd;
+                document.getElementById("dtAgenda").setAttribute("min", today);
+                today = dd + '/' + mm + '/' + yyyy;
+                var div = document.getElementById("divDtFutura");
+                div.innerText =  today ;
+              </script>  
         </div>       
     </section>
 </main>
-
 </body>
 </html>
