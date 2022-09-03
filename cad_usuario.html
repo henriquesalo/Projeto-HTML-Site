@@ -19,6 +19,7 @@ http-equiv="content-type">
                 <li class="nav-item"><a href="oracoes.html">Todas Orações</a></li>
                 <li class="nav-item"><a href="calendario.html">Calendário</a></li>
                 <li class="nav-item"><a href="contato.html">Contato</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
                 <i class='bx bx-search'></i>
             </ul>
             <div class="menu">
@@ -45,6 +46,16 @@ http-equiv="content-type">
             </div>
 
             <div class="campo">
+                <label for="senha"><strong>Senha:</strong></label>
+                <input type="password" name="senha" id="senha" class="inputtext _58mg _5dba _2ph-" required>
+            </div>
+
+            <div class="campo">
+                <label for="confimSenha"><strong>Confirmar Senha:</strong></label>
+                <input type="password" name="confirmSenha" id="confirmSenha" class="inputtext _58mg _5dba _2ph-" required>
+            </div>
+
+            <div class="campo">
                 <label for="tel"><strong>Telefone:</strong></label>
                 <input type="tel" name="telefone" id="telefone" class="inputtext _58mg _5dba _2ph-" required>
             </div>
@@ -66,11 +77,29 @@ http-equiv="content-type">
                 alert("Seus cadastro foi efetuado com sucesso !");
             }
         </script>
-            <script src="y/config.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
             <script src="cadastro.js" type ="module"></script>
         <script src="nav.js"></script>
+        <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyB6O4MPsFTpYMHateIUqyqEnBk_EDMiojc",
+            authDomain: "hrsadmin-66d77.firebaseapp.com",
+            projectId: "hrsadmin-66d77",
+            storageBucket: "hrsadmin-66d77.appspot.com",
+            messagingSenderId: "1021943884761",
+            appId: "1:1021943884761:web:956f22915afb7aedfc87c8",
+            measurementId: "G-E2H42M4NYE"
+          };
+          firebase.initializeApp(firebaseConfig);
+
+          console.log('antes');
+          firebase.auth().signInWithEmailAndPassword("any@email.com", "123456").then(response =>{
+            console.log('success', response)
+          }).catch(error =>{
+            console.log('error', error)
+          })
+          console.log('depois');
+        </script>
 </body>
 </html>
