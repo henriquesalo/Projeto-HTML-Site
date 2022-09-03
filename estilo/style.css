@@ -8,9 +8,8 @@
     list-style: none;
     text-decoration: none;
 }
-
 :root{
-    --azul:#0f2edb;
+    --red:#d63a25;
     --white:#fff;
     --dark:#1e1c2a;
 }
@@ -30,12 +29,9 @@ body{
     position: fixed;
 }
 .navigation .logo{
-    color: var(--azul);
+    color: var(--red);
     font-size: 1.7rem;
     font-weight: 600;
-}
-#logo24{
-    width: 100px;
 }
 .logo span{
     color: var(--dark);
@@ -52,7 +48,7 @@ body{
     transition: all 0.5s;
 }
 .navigation ul li a:hover{
-    color: var(--azul);
+    color: var(--red);
 }
 .navigation i{
     cursor: pointer;
@@ -73,7 +69,7 @@ body{
 }
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3){
-    background: var(--azul);
+    background: var(--red);
 }
 .home{
     width: 100%;
@@ -88,7 +84,7 @@ body{
 }
 .home-text .text-h4{
     font-size: 1.5rem;
-    color: var(--azul);
+    color: var(--red);
     margin-bottom: 1rem;
 }
 .home-text .text-h1{
@@ -101,7 +97,7 @@ body{
 }
 .home-btn{
     padding: 15px 45px;
-    background: var(--azul);
+    background: var(--red);
     color: var(--white);
     border-radius: 10px;
     font-weight: 700;
@@ -112,146 +108,6 @@ body{
 }
 .home-img img{
     width: 100%;
-}
-
-#titulo {
-    font-family: sans-serif;
-    color: var(--dark);
-    margin-left: 7%;
-} 
-
-main.container {
-    background: white;
-    min-width: 320px;
-    min-height: 40vh;
-    padding: 2rem;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-}
-
-main h2 {
-    font-weight: 600;
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-main h2::before {
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 25px;
-    bottom: 3px;
-    left: 0;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #2600ff, #4400ff);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-field {
-    position: relative;
-}
-
-form .input-field:first-child {
-    margin-bottom: 1.5rem;
-}
-
-.input-field .underline::before {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.input-field .underline::after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background: linear-gradient(45deg, #2501f0, #2501f0);
-    transform: scaleX(0);
-    transition: all .3s ease-in-out;
-    transform-origin: left;
-}
-
-.input-field input:focus ~ .underline::after {
-    transform: scaleX(1);
-}
-
-.input-field input {
-    outline: none;
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-}
-
-.input-field input::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-form input[type="submit"] {
-    margin-top: 2rem;
-    padding: 0.4rem;
-    width: 100%;
-    background: linear-gradient(to left, #4776E6, #8e54e9);
-    cursor: pointer;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-    letter-spacing: 0.5px;
-    background: linear-gradient(to right, #4776E6, #8e54e9);
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
-.footer span {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-.footer .social-field {
-    padding: 0.4rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-.footer .social-field a i {
-    margin: 0 0.5rem;
-    width: 15px;
-}
-
-.footer .social-field a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer .social-field.twitter {
-    background: linear-gradient(to right, #56a7f2, #468aca);
-}
-
-.footer .social-field.facebook {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
 }
 
 @media (max-width:785px) {
@@ -309,3 +165,22 @@ form input[type="submit"]:hover {
         width: 125%;
     }
 }
+/* logo nav */
+
+#logo24{
+    width: 100px;
+}
+
+/* cadastro */
+
+    .cad-form{
+        text-align: center;
+    }
+    
+    fieldset {
+        display: inline-block;
+        margin: auto;
+        justify-content: center;
+        text-align:center;
+        vertical-align:middle;
+    }
