@@ -185,103 +185,99 @@ body{
         text-align:center;
         vertical-align:middle;
     }
-/* SLIDER 
 
+/* contato */
 
-
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 4000px;
-    overflow: hidden;    
-}
-
-.slides{
-    width: 400%;
-    height: 400px;
+section{
     display: flex;
-}
-
-.slide input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-}
-
-.slide{
-    width: 400px;
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #ffffff;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
-.manual-btn{
-    border: 2px solid #fff;
-    padding:  5px;
-    border-radius: 10px;
-    cursor: pointer;
+section h2{
+    color: #292828;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
     transition: all 0.5s;
 }
-
-.manual-btn:not(:Last-child){
-    margin-right: 40px;
+form input:focus{
+    border-radius: 16px;
 }
-
-.manual-btn:hover{
-    background-color: #fff;
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
 }
-
-#radio1:checked ~ .first{
-    margin: 0;
+form textarea:focus{
+    border-radius: 16px;
 }
-#radio2:checked ~ .first{
-    margin: -25%;
-}
-#radio3:checked ~ .first{
-    margin: -50%;
-}
-#radio4:checked ~ .first{
-    margin: -75%;
-}
-
-.navigation-auto{
-    border: 2px solid #1e1c2a;
-    padding: 5px;
-    border-radius: 10px;
+form button{
+    padding: 15px;
     cursor: pointer;
-    transition: 0.5s;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #1b6dd8;
+    color: #101026;
+    border-radius: 16px;
 }
 
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;   
-}
+/*Pagina do Obrigado*/
 
-.navigation-auto div:not(:Last-child){
- margin-right: 40px;
+.agradecimento{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #ffffff;
+   flex-direction: column;
 }
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
+.text{
+    font-size: 45px;
+    color: #1b6dd8;
+    margin-bottom: 30px;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
+.paragrafo{
+    color: #000000;
+    margin-bottom: 50px;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
+.btn{
+    padding: 15px 55px;
+    background: #1b6dd8;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.5s;
 }
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
+.btn:hover{
+    border-radius: 16px;
 }
-*/
