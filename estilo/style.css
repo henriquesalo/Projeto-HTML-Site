@@ -2,7 +2,7 @@
 
 *{
     margin: 0;
-    padding: 0;
+  /*  padding: 0; */
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
@@ -176,6 +176,7 @@ body{
 
     .cad-form{
         text-align: center;
+        
     }
     
     fieldset {
@@ -195,7 +196,7 @@ section{
     flex-direction: column;
     padding: 10px 45px;
     background: #ffffff;
-    width: 500px;
+    width: 400px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 section h2{
@@ -215,8 +216,9 @@ form label{
 }
 form input{
     padding: 15px;
-    outline: none;
-    border: 0;
+    outline-color: #1b6dd8 ;
+    border-color: #000000;
+    border-radius: 16px;
     margin-bottom: 20px;
     font-size: 15px;
     transition: all 0.5s;
@@ -226,8 +228,9 @@ form input:focus{
 }
 form textarea{
     padding: 10px;
-    outline: none;
-    border: 0;
+    outline-style: none;
+    border-color: #000000;
+    border-radius: 16px;
     font-size: 15px;
     margin-bottom: 30px;
     transition: all 0.5s;
