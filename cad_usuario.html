@@ -55,7 +55,7 @@ http-equiv="content-type">
             </div>
     </div><br>
 
-            <button type="submit" class="home-btn" name="submit"><a href="oracoes.html" onclick="cadastro()" value="Exibir Alert">Finalizar Cadastro</a></button>
+            <button onclick="enviarDados()" class="home-btn" name="submit">Finalizar Cadastro</button>
         </fieldset>
         </form>
 
@@ -65,6 +65,28 @@ http-equiv="content-type">
             function cadastro(){
                 alert("Seus cadastro foi efetuado com sucesso !");
             }
+
+            function enviarDados(){
+                const nome = document.getElementById("nome").value;
+                const email = document.getElementById("email").value;
+                const telefone = document.getElementById("telefone").value;
+                const aniversario = document.getElementById("aniversario").value;
+                const b = JSON.stringify({
+                        nome,
+                        email,
+                        telefone,
+                        aniversario,
+                    })
+                    console.log(b);
+                fetch('http://localhost:3000/data',{
+                    method: "POST", 
+                    body: b , headers: {"Content-type": "application/json; charset=UTF-8"}
+                }).then(function(response){
+                    console.log(response);
+                })
+                return false
+        }
+               
         </script>
 
         <script src="nav.js"></script>
