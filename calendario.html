@@ -39,13 +39,24 @@
                   <input type="date" name="data" id="dtAgenda" min="2017-04-01" required />
                   <p><span style="color:#ff0000;"><small>Aten&ccedil;&atilde;o, Agendar para a partir de:</small></span></p><div id="divDtFutura"></div>
                 </div>
+                <br>
+                <div>
+                  <label for="timer">Horário que Deseja Ser Notificado: </label><br>
+                  <input type="time" id="timer" name="timer" min="00:00" max="23:59" required>
+                </div>
+
               </form><br>
+              <input type="checkbox" id="notificar" name="notificar"
+                      checked>
+                      <label for="notificar">Notificar Todos os Dias</label><br>
+
               <button><a href="oracoes.html" onclick="agenda()" value="Exibir Alert">AGENDAR</a></button>
 
               <script>
                 function agenda(){
-                    alert("Seu Agendamento Foi Efetuado Com Sucesso !!");
+                  alert("Seu Agendamento Foi Efetuado Com Sucesso !!");
                 }
+
             </script>
             <script>
                 var today = new Date();
