@@ -16,7 +16,7 @@
 }
 body{
     color: var(--dark);
-    background: var(--white);
+    background-color: #fff;
 }
 .navigation{
     display: flex;
