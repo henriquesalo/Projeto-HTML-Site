@@ -15,7 +15,9 @@
     --btn:#0f2edb;
 }
 body{
-    background-image: url(/Projeto-HTML-Site/images/);
+    background-image: url('/images/brazilian-flag.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: var(--dark);
 }
 .navigation{
@@ -23,9 +25,9 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
+    box-shadow: 0 0.1rem 0.5rem rgba(204, 204, 204, 0.24);
     width: 100%;
-    background: var(--white);
+    background-image: linear-gradient(to bottom, #0000008a, rgba(255, 255, 255, 0.068));
     transition: all 0.5s;
 }
 .navigation .logo{
