@@ -15,7 +15,7 @@
     --btn:#0f2edb;
 }
 body{
-    background-image: url(/Projeto-HTML-Site/images/brazilian-flag.jpg);
+    background-image: url(/Projeto-HTML-Site/images/);
     color: var(--dark);
 }
 .navigation{

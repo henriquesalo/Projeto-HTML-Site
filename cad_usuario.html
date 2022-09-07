@@ -46,50 +46,66 @@ http-equiv="content-type">
             
             <div class="campo">
                 <label for="tel"><strong>Telefone:</strong></label>
-                <input type="tel" name="telefone" id="telefone" class="inputtext _58mg _5dba _2ph-" required>
+                <input type="number" name="tel" id="tel" class="inputtext _58mg _5dba _2ph-" required>
             </div>
 
             <div class="campo">
                 <label for="aniversario"><strong>Data de Nascimento</strong></label>
-                <input type="date" name="aniversario" id="aniversario" class="inputtext _58mg _5dba _2ph-">
+                <input type="date" name="nascimento" id="nascimento" class="inputtext _58mg _5dba _2ph-">
             </div>
     </div><br>
 
-            <button onclick="enviarDados(); cadastro()" class="home-btn" name="submit" >Finalizar Cadastro</button>
+            <button type="submit" onclick="cadastro()" class="home-btn" name="submit" >Finalizar Cadastro</button>
         </fieldset>
         </form>
-
 
     </section>
         <script>
             function cadastro(){
                 alert("Seus cadastro foi efetuado com sucesso !");
             }
-
-            function enviarDados(){
-                const nome = document.getElementById("nome").value;
-                const email = document.getElementById("email").value;
-                const telefone = document.getElementById("telefone").value;
-                const aniversario = document.getElementById("aniversario").value;
-                const b = JSON.stringify({
-                        nome,
-                        email,
-                        telefone,
-                        aniversario,
-                    })
-                    console.log(b);
-                fetch('http://localhost:3000/data',{
-                    method: "POST", 
-                    body: b , headers: {"Content-type": "application/json; charset=UTF-8"}
-                }).then(function(response){
-                    console.log(response);
-                })
-                return false
-            }
-               
         </script>
 
-        <script src="nav.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
+<script>
+    //modificar de acordor com o seu projeto
+    const firebaseConfig = {
+
+        apiKey: "AIzaSyAsjcPpOoHtAH3ZtqR_P-YIONB4PbaS_I0",
+        authDomain: "diasdeoracao.firebaseapp.com",
+        projectId: "diasdeoracao",
+        storageBucket: "diasdeoracao.appspot.com",
+        messagingSenderId: "1067463051687",
+        appId: "1:1067463051687:web:35da583bf663268d5cce82"
+    };
+
+    const firebaseApp = firebase.initializeApp(firebaseConfig);
+    const db = firebaseApp.firestore();
+
+    const form = document.querySelector('#form_cadastro');
+
+    form.addEventListener('submit',(event)=>{
+    event.preventDefault();
+
+    let novoCadastro = {
+        nome: form.nome.value,
+        email: form.email.value,
+        tel: form.tel.value,
+        nascimento: form.nascimento.value
+    }
+    
+    db.collection('Cadastros').add({
+       novoCadastro: novoCadastro
+    })
+
+    console.log(novoCadastro)
+    
+    })
+    </script>
+
+    <script src="nav.js"></script>
      
 </body>
 </html>
