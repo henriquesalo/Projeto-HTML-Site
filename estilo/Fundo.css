@@ -14,12 +14,18 @@
     --dark:#1e1c2a;
     --btn:#0f2edb;
 }
-body{
-    background-image: url('/images/brazilian-flag.jpg');
+html{
+    background-image: url(https://cdn.discordapp.com/attachments/1010584159145705632/1017188575382609992/brazilian-flag.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 2000px 1200px;
+}
+body{
+    /*background-image: url('/images/brazilian-flag.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;*/
     color: var(--dark);
 }
+
 .navigation{
     display: flex;
     align-items: center;
