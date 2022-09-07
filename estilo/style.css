@@ -14,9 +14,11 @@
     --dark:#1e1c2a;
     --btn:#0f2edb;
 }
+/*background do site*/
 body{
     color: var(--dark);
-    background-color: #fff;
+    background-color: rgb(226, 0, 0);
+    height: 100%;
 }
 .navigation{
     display: flex;
@@ -189,8 +191,6 @@ body{
 /* contato */
 
 section{
-    margin-left: 0%;
-    margin-right: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,6 +199,8 @@ section{
     background: #ffffff;
     width: 400px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-left: auto;
+    margin-right: auto;
 }
 section h2{
     color: #292828;
@@ -287,6 +289,11 @@ form button:hover{
     border-radius: 16px;
 }
 
+.home-btn{
+    margin: auto;
+    width: 60%;
+
+}
 
    
 
