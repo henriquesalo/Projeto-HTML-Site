@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@100;400;500&display=swap');;
+@font-face {
+    font-family:'optima';
+    src: url(/estilo/OPTIMA.TTF)format('truetype');
+}
+
 
 *{
     margin: 0;
@@ -13,6 +19,7 @@
     --white:#fff;
     --dark:#1e1c2a;
     --btn:#0f2edb;
+    --optima:'optima',sans-serif;
 }
 html{
     background-image: url(https://cdn.discordapp.com/attachments/1010584159145705632/1017188575382609992/brazilian-flag.png);
@@ -31,14 +38,15 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-
+    background: #0000006e;
     width: 100%;
     transition: all 0.5s;
     
 }
 
 .navigation .logo{
-    color: var(--red);
+    color: rgb(235, 235, 235);
+    text-shadow: 1px 2px 1px #ffffff4a;
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -92,18 +100,25 @@ body{
     max-width: 37rem;
 }
 .home-text .text-h4{
-    font-size: 1.5rem;
+    font-size: 4rem;
     color: var(--red);
     margin-bottom: 1rem;
+    font-family: var(--optima);
+    color: white;
 }
 .home-text .text-h1{
-    font-size: 4rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     line-height: 4rem;
+    font-family: var(--optima);
+    color: white;
 }
 .home-text p{
     margin-bottom: 4rem;
+    font-family: var(--optima);
+    color: white;
 }
+
 .home-btn{
     padding: 15px 45px;
     background: var(--btn);
