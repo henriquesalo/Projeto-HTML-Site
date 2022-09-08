@@ -107,7 +107,7 @@ body{
     color: white;
 }
 .home-text .text-h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 4rem;
     font-family: var(--optima);
@@ -117,6 +117,7 @@ body{
     margin-bottom: 4rem;
     font-family: var(--optima);
     color: white;
+    font-size: 1.4em;
 }
 
 .home-btn{
@@ -169,21 +170,25 @@ body{
     }
     /*main*/
     .home{
-        padding: 100px 2%;
+        padding: 10px 2% 100px 2%;
         flex-direction: column;
         text-align: center;
         overflow: hidden;
         gap: 5rem;
+        margin-top: 0px;
     }
     .home .text-h4{
-        font-size: 15px;
+        font-size: 2.4rem;
+        margin-top: -5px;
+        margin-bottom: 100px;
     }
     .home .text-h1{
-        font-size: 2.5rem;
+        font-size: 1.9rem;
         line-height: 3rem;
+        margin-bottom: 50px;
     }
     .home p{
-        font-size: 15px;
+        font-size: 1.4rem;
     }
     .home-img{
         width: 125%;
@@ -308,6 +313,34 @@ form button:hover{
 .btn:hover{
     border-radius: 16px;
 }
+
+/*Home*/
+.text-h4,.text-h1,.text-p{
+    text-align: center;
+}
+.btn-cadastro{
+        background-color:rgba(0, 0, 0, 0.438);
+        border-radius:28px;
+        border:1px solid #000000;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        padding:16px 31px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+    .myButton:hover {
+        background-color:transparent;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+    
+
+
 /*Todas Orações*/
 body.oracoes{
     background-color: #00000000;
