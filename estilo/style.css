@@ -14,6 +14,13 @@
     --dark:#1e1c2a;
     --btn:#0f2edb;
 }
+
+html{
+    background-image: url(https://s3.sa-east-1.amazonaws.com/arquivos.padrepauloricardo.org/uploads/episodio/share_image/2232/233-novena-pelo-brasil-frame-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 1200px;
+}
+
 /*background do site*/
 body{
     color: var(--dark);
@@ -26,10 +33,9 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
+    background: #0000006e;
     width: 100%;
-    background: #ffffff00;
-    transition: all 0.5s;
+    transition: all 0.5s; 
 }
 .navigation .logo{
     color: var(--red);
@@ -45,7 +51,7 @@ body{
     gap: 5rem;
 }
 .navigation ul li a{
-    color: var(--dark);
+    color:#ffffff;
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
@@ -119,6 +125,9 @@ body{
     }
     .menu{
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
     }
     .menu.ativo .bar:nth-child(1){
         transform:  translateY(8px) rotate(45deg);
@@ -132,11 +141,11 @@ body{
     .nav-menu{
         position: fixed;
         right: -100%;
-        top: 70px;
+        top: 0px;
         width: 100%;
         height: 100%;
         flex-direction: column;
-        background: var(--white);
+        background: #242424;
         gap: -10px;
         transition: 0.3s;
     }
@@ -188,6 +197,7 @@ body{
         text-align:center;
         vertical-align:middle;
     }
+
 /* contato */
 
 section{
@@ -196,11 +206,12 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 10px 45px;
-    background: #ffffff;
+    background: #ffffff5e;
     width: 400px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px 10px 10px 10px ;
 }
 .contato{
     margin-top: -123px;
