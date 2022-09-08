@@ -1,9 +1,7 @@
 function cadastro(){
     alert("Seus cadastro foi efetuado com sucesso !");
-    window.location.replace("https://21diasdeoracao.com/index.html");
+    window.location.replace("https://21diasdeoracao.com/oracoes.html");
 }
-
-
 const firebaseConfig = {
 
     apiKey: "AIzaSyAsjcPpOoHtAH3ZtqR_P-YIONB4PbaS_I0",
