@@ -22,7 +22,6 @@
     --optima:'optima',sans-serif;
 }
 html{
-    /*background-image: url(https://cdn.discordapp.com/attachments/1010584159145705632/1017188575382609992/brazilian-flag.png);*/
     background-image: url(https://s3.sa-east-1.amazonaws.com/arquivos.padrepauloricardo.org/uploads/episodio/share_image/2232/233-novena-pelo-brasil-frame-2.jpg);
     background-repeat: no-repeat;
     background-size: 2000px 1200px;
@@ -134,10 +133,7 @@ body{
 .home-img img{
     width: 100%;
 }
-/*blue nav*/
 
-
-/*fim blur nav*/
 @media (max-width:785px) {
     .navigation{
         padding: 18px 20px;
@@ -291,7 +287,7 @@ form button:hover{
    background: #ffffff;
    flex-direction: column;
 }
-.text{
+.text-oracoes{
     font-size: 45px;
     color: #1b6dd8;
     margin-bottom: 30px;
@@ -312,7 +308,37 @@ form button:hover{
 .btn:hover{
     border-radius: 16px;
 }
-
-
-   
-
+/*Todas Orações*/
+body.oracoes{
+    background-color: #00000000;
+}
+main.oracoes{
+    background-color: rgba(255, 255, 255, 0.37);
+    min-width: 312px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 100px auto auto auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 7px rgba(102, 101, 101, 0.418);
+    border-radius: 10px 10px 10px 10px ;
+}
+.h1-oracoes{
+    color: red;
+    font-size:2.5em;
+    text-align: center;
+}
+.p-oracoes{
+    color: purple;
+    text-align: justify;
+    font-size:1.5em;
+}
+.footer-oracoes{
+    margin-top: 5px;
+    color: yellow;
+    text-align: left;
+    font-size: 0.8em;
+}
+hr{
+    color: white;
+    margin-bottom: 50px;
+}
