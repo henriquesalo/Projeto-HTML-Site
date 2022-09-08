@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="estilo/Fundo.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+    window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+        OneSignal.init({
+        appId: "608352bf-4347-4597-8a76-8a3c9d981bb6",
+        });
+        });
+    </script>
     </head>
     <body id="fundo">
       <header>
@@ -34,7 +43,6 @@
                 <p class="text-p">Orar é chave da vitória, estaremos juntos orando por um Brasil melhor.
                 </p>
                 <a href="cad_usuario.html"><button class="btn-cadastro">Ore conosco</button></a>
-                
             </div>
         </section>
     </main>
