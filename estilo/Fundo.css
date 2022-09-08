@@ -15,14 +15,15 @@
     text-decoration: none;
 }
 :root{
-    --red:#000000;
+    --red:#ffffff;
     --white:#fff;
-    --dark:#1e1c2a;
+    --dark:#ffffff;
     --btn:#0f2edb;
     --optima:'optima',sans-serif;
 }
 html{
-    background-image: url(https://cdn.discordapp.com/attachments/1010584159145705632/1017188575382609992/brazilian-flag.png);
+    /*background-image: url(https://cdn.discordapp.com/attachments/1010584159145705632/1017188575382609992/brazilian-flag.png);*/
+    background-image: url(https://s3.sa-east-1.amazonaws.com/arquivos.padrepauloricardo.org/uploads/episodio/share_image/2232/233-novena-pelo-brasil-frame-2.jpg);
     background-repeat: no-repeat;
     background-size: 2000px 1200px;
 }
@@ -59,7 +60,7 @@ body{
     gap: 5rem;
 }
 .navigation ul li a{
-    color: var(--dark);
+    color:#ffffff;
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
@@ -156,11 +157,11 @@ body{
     .nav-menu{
         position: fixed;
         right: -100%;
-        top: 70px;
+        top: 0px;
         width: 100%;
         height: 100%;
         flex-direction: column;
-        background: var(--white);
+        background:#242424;
         gap: -10px;
         transition: 0.3s;
     }
