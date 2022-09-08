@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"; charset=ISO-8859-1"
 http-equiv="content-type">
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script> 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <title>Cadastro de Usuário</title>
-    
+    <title>Cadastro de Usuário</title>  
 </head>
 <body>
     <header>
@@ -55,15 +57,12 @@ http-equiv="content-type">
                 <input type="date" name="nascimento" id="nascimento" class="inputtext _58mg _5dba _2ph-">
             </div>
     </div><br>
-            <button type="submit" onclick="cadastro()" class="home-btn" name="submit" ><a href="oracoes.html">Finalizar Cadastro</a></button>
+            <button type="submit" onclick="cadastro()" class="home-btn" name="submit" >Finalizar Cadastro</button>
         </fieldset>
         </form>
 
     </section>
-    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
-    <script src="app.js"></script>
-    <script src="nav.js"></script> 
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/nav.js"></script> 
 </body>
 </html>

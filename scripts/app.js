@@ -1,6 +1,8 @@
 function cadastro(){
     alert("Seus cadastro foi efetuado com sucesso !");
+    window.location.replace("https://21diasdeoracao.com/index.html");
 }
+
 
 const firebaseConfig = {
 
@@ -14,23 +16,19 @@ const firebaseConfig = {
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
-
 const form = document.querySelector('#form_cadastro');
 
 form.addEventListener('submit',(event)=>{
-event.preventDefault();
+    event.preventDefault();
 
-let novoCadastro = {
-    nome: form.nome.value,
-    email: form.email.value,
-    tel: form.tel.value,
-    nascimento: form.nascimento.value
-}
-
-db.collection('Cadastros').add({
+    let novoCadastro = {
+        nome: form.nome.value,
+        email: form.email.value,
+        tel: form.tel.value,
+        nascimento: form.nascimento.value
+    }
+    db.collection('Cadastros').add({
    novoCadastro: novoCadastro
 })
-
-console.log(novoCadastro)
-
+    console.log(novoCadastro)
 })
