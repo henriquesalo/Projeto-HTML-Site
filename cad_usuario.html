@@ -60,52 +60,10 @@ http-equiv="content-type">
         </form>
 
     </section>
-        <script>
-            function cadastro(){
-                alert("Seus cadastro foi efetuado com sucesso !");
-            }
-        </script>
-
-<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
-<script>
-    //modificar de acordor com o seu projeto
-    const firebaseConfig = {
-
-        apiKey: "AIzaSyAsjcPpOoHtAH3ZtqR_P-YIONB4PbaS_I0",
-        authDomain: "diasdeoracao.firebaseapp.com",
-        projectId: "diasdeoracao",
-        storageBucket: "diasdeoracao.appspot.com",
-        messagingSenderId: "1067463051687",
-        appId: "1:1067463051687:web:35da583bf663268d5cce82"
-    };
-
-    const firebaseApp = firebase.initializeApp(firebaseConfig);
-    const db = firebaseApp.firestore();
-
-    const form = document.querySelector('#form_cadastro');
-
-    form.addEventListener('submit',(event)=>{
-    event.preventDefault();
-
-    let novoCadastro = {
-        nome: form.nome.value,
-        email: form.email.value,
-        tel: form.tel.value,
-        nascimento: form.nascimento.value
-    }
-    
-    db.collection('Cadastros').add({
-       novoCadastro: novoCadastro
-    })
-
-    console.log(novoCadastro)
-    
-    })
-    </script>
-
-    <script src="nav.js"></script>
-     
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
+    <script src="app.js"></script>
+    <script src="nav.js"></script> 
 </body>
 </html>
