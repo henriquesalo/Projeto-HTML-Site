@@ -190,12 +190,14 @@ body{
         margin-top: -149px;
     }
     
-    fieldset {
+    fieldset.grupo {
         display: inline-block;
         margin: auto;
         justify-content: center;
         text-align:center;
         vertical-align:middle;
+        color: #00000000;
+        border-color: #00000000;
     }
 
 /* contato */
