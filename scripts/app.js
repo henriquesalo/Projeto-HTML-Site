@@ -13,6 +13,7 @@ const firebaseConfig = {
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 const db = firebaseApp.firestore();
 const form = document.querySelector('#form_cadastro');
 
